@@ -8,6 +8,7 @@
 
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
+version = '1.0.1-SNAPSHOT'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -24,6 +25,8 @@ dependencies {
     implementation 'com.google.guava:guava:23.0'
 
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+      testCompile 'junit:junit:4.12'
+      testCompile 'io.cucumber:cucumber-java:3.0.2',
+      testCompile 'io.cucumber:cucumber-junit:3.0.2'
 }
 
